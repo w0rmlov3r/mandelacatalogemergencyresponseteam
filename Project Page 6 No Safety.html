@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>There Is No Safety</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #c0c0c0; /* Light gray for a vintage feel */
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+            animation: glitch 1.5s infinite;
+        }
+
+        @keyframes glitch {
+            0%, 100% {
+                text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.5), 0 0 25px rgba(255, 0, 0, 0.5), 0 0 5px rgba(255, 0, 0, 0.5);
+                transform: translate(0, 0);
+            }
+            10% {
+                text-shadow: -1px -1px 2px rgba(255, 0, 0, 0.5), 0 0 15px rgba(255, 0, 0, 0.5), 0 0 5px rgba(255, 0, 0, 0.5);
+                transform: translate(-5px, -5px) scale(1.01);
+            }
+            20% {
+                text-shadow: 2px 2px 3px rgba(255, 0, 0, 0.5), 0 0 20px rgba(255, 0, 0, 0.5), 0 0 5px rgba(255, 0, 0, 0.5);
+                transform: translate(5px, 5px) rotate(-1deg);
+            }
+            30% {
+                text-shadow: -2px -2px 4px rgba(255, 0, 0, 0.5), 0 0 10px rgba(255, 0, 0, 0.5), 0 0 5px rgba(255, 0, 0, 0.5);
+                transform: translate(-5px, -5px) scale(0.98);
+            }
+            40% {
+                text-shadow: 3px 3px 5px rgba(255, 0, 0, 0.5), 0 0 30px rgba(255, 0, 0, 0.5), 0 0 10px rgba(255, 0, 0, 0.5);
+                transform: translate(5px, 5px) rotate(1deg);
+            }
+        }
+
+        h1 {
+            font-size: 6em;
+            margin-top: 50px;
+            color: rgba(255, 0, 0, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 15px;
+            animation: glitch 1s infinite, melting 1.5s infinite; /* Added melting effect */
+            filter: brightness(0.8);
+        }
+
+        @keyframes melting {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(15px); /* Moves down, simulating melting */
+                filter: blur(0.5px); /* Blur effect to enhance melting look */
+            }
+        }
+
+        p {
+            font-size: 1.5em;
+            color: rgba(192, 192, 192, 0.8);
+            margin-top: 20px;
+            animation: blink 1.5s infinite alternate;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://i.imgur.com/X2H7ZsJ.jpg'); /* Dark, creepy background */
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px) contrast(0.7); /* Lower contrast for a vintage feel */
+            z-index: -1;
+            opacity: 0.7;
+            mix-blend-mode: multiply; /* For more depth and vintage effect */
+        }
+
+        .distorted-text {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.1);
+            font-size: 10em;
+            text-transform: uppercase;
+            animation: glitch 2s infinite, melting 1.5s infinite; /* Added melting effect */
+            white-space: nowrap;
+            pointer-events: none;
+            filter: blur(0.6px); /* Adding blur to distorted text */
+        }
+
+        /* Random positions for distorted text */
+        .distorted-text:nth-child(2) { top: 10%; left: 5%; }
+        .distorted-text:nth-child(3) { top: 30%; left: 50%; }
+        .distorted-text:nth-child(4) { top: 60%; left: 20%; }
+        .distorted-text:nth-child(5) { top: 80%; left: 70%; }
+
+        /* VHS Effect */
+        .vhs {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background-image: url('https://media.tenor.com/3IMnx3vl2LwAAAAM/i-can-see-you-dark.gif'); /* VHS static */
+            opacity: 0.1; /* Very faint VHS static */
+            mix-blend-mode: overlay; /* Overlay to create static */
+            z-index: 0;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255, 0, 0, 0.6);
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .terrifying-message {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 2em;
+            text-transform: uppercase;
+            animation: blink 3s infinite alternate;
+            filter: blur(0.8px);
+        }
+
+
+        .creepy-image {
+            position: absolute;
+            animation: fade-in-out 5s infinite alternate;
+            filter: blur(1px);
+        }
+
+        /* New positions for creepy images */
+        .creepy-image:nth-child(1) { bottom: 300px; left: 10%; }
+        .creepy-image:nth-child(2) { bottom: 250px; right: 10%; }
+        .creepy-image:nth-child(3) { bottom: 200px; left: 40%; }
+
+        @keyframes fade-in-out {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="vhs"></div> <!-- VHS static overlay -->
+    <h1>THERE IS NO SAFETY</h1>
+    <p>The system has detected your presence. You cannot escape.</p>
+
+    <div class="footer">
+        <p>Error Code: 500 - System Malfunction</p>
+    </div>
+
+    <!-- Additional eerie texts for effect -->
+    <div class="distorted-text">ERROR</div>
+    <div class="distorted-text">PLEASE EXIT</div>
+    <div class="distorted-text">DETECTED</div>
+    <div class="distorted-text">SYSTEM FAILURE</div>
+    <div class="distorted-text">RUN</div>
+
+    <!-- Audio Element -->
+    <audio id="audio" src="audio/ginaaudio3.mp3" preload="auto"></audio>
+
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.key.toLowerCase() === 'g') {
+                const audio = document.getElementById('audio');
+                audio.play();
+            }
+        });
+    </script>
+</body>
+</html>

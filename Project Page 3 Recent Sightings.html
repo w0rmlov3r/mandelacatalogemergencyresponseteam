@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Sightings</title>
+    <style>
+        body {
+            background-color: #0d1b2a;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow-x: hidden;
+            padding-bottom: 80px; /* Prevent content cut-off by footer */
+        }
+
+        h1 {
+            font-size: 3.5em;
+            color: #ff4f61;
+            margin: 50px 0 20px 0;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 15px rgba(255, 79, 97, 0.8);
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .content-section {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 900px;
+            text-align: left; /* Maintain left alignment for content */
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 10px 0; /* Reduced margin to decrease gap between image and text */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0; /* Ensured consistent spacing */
+        }
+
+        ul li {
+            background-color: rgba(255, 79, 97, 0.4);
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 0px 0px 10px rgba(255, 79, 97, 0.6);
+        }
+
+        .key-point {
+            background-color: rgba(255, 79, 97, 0.4);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(255, 79, 97, 0.6);
+        }
+
+        .back-button {
+            background-color: #1f4f75;
+            color: white;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin: 40px 0; /* Added margin for consistent spacing */
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #ff4f61;
+        }
+
+        .parallax {
+            background-image: url('https://i.imgur.com/1t4rVbT.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            position: relative;
+            margin: -150px 0; /* Added margin for spacing */
+        }
+
+        .footer {
+            background-color: #1f4f75;
+            color: white;
+            padding: 20px;
+            font-size: 1.1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        /* Mobile responsive */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+                margin: 20px 0; /* Adjusted margin for smaller screens */
+            }
+            p {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Recent Sightings</h1>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Black_bear_map.png" alt="Recent Sightings" style="width:100%; max-width:600px; margin: 20px 0;"/>
+
+    <div class="parallax"></div>
+
+    <div class="content-section">
+        <p>Recent sightings of Alternates have been reported in the following locations. Keep your guard up, and avoid areas where these sightings have occurred. The presence of an Alternate may indicate a dangerous situation.</p>
+
+        <div class="key-point">
+            <h3>Reported Sightings:</h3>
+            <ul>
+                <li><strong>New York City - 5th Avenue:</strong> A figure was seen walking among the crowd at night. Witnesses described it as having an unnaturally still presence.</li>
+                <li><strong>Los Angeles - Downtown Area:</strong> Several people reported hearing whispering voices in an abandoned building. The sounds were traced to no one in particular.</li>
+                <li><strong>Chicago - South Side:</strong> Surveillance footage shows a dark figure lurking near the alleyway behind a convenience store. No other individuals were nearby during the sighting.</li>
+            </ul>
+        </div>
+
+        <div class="key-point">
+            <h3>Important: Avoid Confrontation</h3>
+            <p>If you encounter a person in one of these areas displaying strange behavior or a distorted presence, do not attempt to confront them. Stay as far away as possible and alert authorities immediately.</p>
+        </div>
+
+        <div class="key-point">
+            <h3>Stay Safe</h3>
+            <p>Stay vigilant, and keep in mind the warning signs of an Alternate encounter. If you notice any of the following, immediately retreat to a safe space:</p>
+            <ul>
+                <li>Unnatural stillness or awkward movement patterns</li>
+                <li>People that seem to mimic your movements or gestures</li>
+                <li>Strange or unsettling facial expressions</li>
+            </ul>
+        </div>
+
+        <!-- Wrap the button in a div to center it -->
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="Project.html" class="back-button">Back to Emergency Alert</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Mandela Catalog - Emergency Response Team</p>
+    </div>
+
+</body>
+</html>
